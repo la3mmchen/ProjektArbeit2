@@ -1,27 +1,9 @@
 <?php
 /**
- * This controller provides the logic needed for the REST-API.
- * @property string $format defines output format; default: json
- * @property integer $user_id; auth stores user_id of authenticated user in $user_id
- * @property string $user_name; auth stores user_name in $user_name 
- * 
+ * This controller provides the logic needed for the REST-API. 
  **/
 class ApiController extends Controller
-{
-	/* Changelog: contains last added functions */
-	private $changelog = array( 'createFeedback',
-																'getRequests',
-																'setChangedProfile',
-																'setContactRequest',
-																'setChangedChannel',
-	);
-    
-    /**
-    * Default response format
-    * either 'json' or 'xml'
-    */
-    private $format = 'json';
-    
+{    
     /*
      * Components for Logging (file plus hash)
      */
