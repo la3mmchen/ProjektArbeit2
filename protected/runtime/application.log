@@ -1,0 +1,198 @@
+2012/10/05 16:44:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'riddl.tbl_userRelation' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_userRelation`.
+in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php (13)
+2012/10/05 16:45:35 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "validatePassword".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CComponent.php:269
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/db/ar/CActiveRecord.php(214): CComponent->__call('validatePasswor...', Array)
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(22): CActiveRecord->__call('validatePasswor...', Array)
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(22): User->validatePassword('lala')
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#14 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:47:11 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:47:14 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:48:17 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:48:19 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:48:44 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:49:01 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(40): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 16:49:31 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "admin".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/auth/CPhpAuthManager.php:173
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/components/UserIdentity.php(38): CPhpAuthManager->assign('admin', '1')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CInlineValidator.php(39): LoginForm->authenticate('password', Array)
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CModel.php(152): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('login')
+#11 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('site/login')
+#12 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/site/login
+2012/10/05 17:03:40 [error] [exception.CException] exception 'CException' with message 'Property "ApiController.userid" is not defined.' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/ApiController.php(183): CComponent->__get('userid')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/ApiController.php(151): ApiController->_sendResponse(200, '[{"user_id":"2"...')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): ApiController->actionGet()
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('get')
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/get')
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/api/get/getContacts/
+2012/10/05 17:04:09 [error] [exception.CException] exception 'CException' with message 'Property "ApiController.userid" is not defined.' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/ApiController.php(183): CComponent->__get('userid')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/protected/controllers/ApiController.php(151): ApiController->_sendResponse(200, '[{"user_id":"2"...')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/actions/CInlineAction.php(50): ApiController->actionGet()
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(277): CController->run('get')
+#7 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/get')
+#8 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#9 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/_abgabe/index.php/api/get/getContacts/
+2012/10/05 19:09:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getContacts".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php:477
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php(262): CController->missingAction('getContacts')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(277): CController->run('getContacts')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/getContacts...')
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php/api/getContacts/get/getContacts/
+2012/10/05 19:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getContacts".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php:477
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php(262): CController->missingAction('getContacts')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(277): CController->run('getContacts')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/getContacts')
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php/api/getContacts/
+2012/10/05 19:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getContacts".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php:477
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php(262): CController->missingAction('getContacts')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(277): CController->run('getContacts')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/getContacts')
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php/api/getContacts/
+2012/10/05 19:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getContacts".' in /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php:477
+Stack trace:
+#0 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CController.php(262): CController->missingAction('getContacts')
+#1 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(277): CController->run('getContacts')
+#2 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/web/CWebApplication.php(136): CWebApplication->runController('api/getContacts')
+#3 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/yii/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/alex/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/_VaWI/_projektarbeiten/_projektarbeit2/_content/git/ProjektArbeit2/index.php/api/getContacts
